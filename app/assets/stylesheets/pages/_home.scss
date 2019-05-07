@@ -1,1 +1,71 @@
-// Specific CSS for your home-page
+.panels {
+min-height: 100vh;
+overflow: hidden;
+display: flex;
+}
+
+
+
+.panel {
+  color: yellow;
+  text-align: center;
+  align-items: center;
+  flex: 1;
+  font-size: 20px;
+  background-size:cover;
+  background-position: center;
+
+  transition:
+  font-size 0.7s cubic-bezier(0.61,-0.19, 0.7, -0.11),
+  flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+  background 0.2s;
+
+  border: 1px solid blue;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  flex-direction:column;
+}
+
+
+// flex child
+
+.panel > * {
+  margin: 0;
+  width: 100%;
+  transition:transform 0.5s;
+  border: 1px solid;
+  flex: 1 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel > *:first-child { transform: translateY(-100%); }
+
+.panel.open-active > *:first-child { transform:translateY(0); }
+
+.panel > *:last-child { transform: translateY(100%); }
+
+.panel.open-active > *:last-child { transform: translateY(0); }
+
+//
+.panel.open {
+  flex: 5;
+  font-size: 40px;
+}
+
+
+
+//adding img to test the js
+.panel1 {
+  background-image: url("https://images.unsplash.com/photo-1557121066-f82d37cabc43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+
+}
+.panel2{
+  background-image: url("https://images.unsplash.com/photo-1557111113-84273a7f0a8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+}
+
+.panel3 {
+  background-image: url("https://images.unsplash.com/photo-1557111113-84273a7f0a8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+}
