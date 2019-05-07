@@ -7,4 +7,3 @@ import {displayMatches } from '../components/endpoint';
 toggleOpen();
 
 displayMatches();
-sdfasdfsafas;
