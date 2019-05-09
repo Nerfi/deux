@@ -5,6 +5,8 @@ import {displayMatches } from '../components/endpoint';
 import { debounce } from '../components/slides';
 //import { checkSlide } from '../components/slides';
 
+import {myFunction } from '../components/navbar';
+
 
 //iniciando la const
 //toggleOpen();
@@ -13,3 +15,7 @@ import { debounce } from '../components/slides';
 
 debounce();
 //checkSlide();
+
+
+//navbar
+myFunction();
