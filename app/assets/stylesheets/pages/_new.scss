@@ -70,8 +70,13 @@
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: red;
 }
 
 .sticky+.content {
   padding-top: 60px;
+}
+
+.blue{
+  background-color:blue;
 }
