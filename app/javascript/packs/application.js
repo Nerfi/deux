@@ -5,8 +5,10 @@ import {displayMatches } from '../components/endpoint';
 import { debounce } from '../components/slides';
 //import { checkSlide } from '../components/slides';
 
-import {myFunction } from '../components/navbar';
+//import {myFunction } from '../components/navbar';
 
+import { handleLeave} from '../components/navstripe';
+import { handleEnter } from '../components/navstripe';
 
 //iniciando la const
 //toggleOpen();
@@ -18,4 +20,9 @@ debounce();
 
 
 //navbar
-myFunction();
+//myFunction();
+
+//stripe navbar
+
+handleEnter();
+handleLeave();

@@ -69,3 +69,115 @@ display: flex;
 .panel3 {
   background-image: url("https://images.unsplash.com/photo-1557111113-84273a7f0a8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
 }
+
+
+//stripe behavior navbar
+nav {
+  position:relative;
+  //perspective: 600px; not working
+
+}
+
+.cool > li > a {
+  color:yellow;
+  text-decoration: none;
+  font-size:20px;
+  background:  rgba(0,0,0,0.2);
+  padding:10px 20px;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.cool > li {
+  position:relative;
+  display:flex;
+  justify-content: center;
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+}
+
+.dropdown {
+  opacity:0;
+  position:absolute;
+  overflow:hidden;
+  padding: 20px;
+  top: -20px;
+  border-radius:2px;
+  transition: all 0.5s;
+  transform: translateY(100px);
+  will-change: transform; // idk if it works
+  display: none;
+}
+
+.trigger-enter .dropdown {
+  display:block;
+
+}
+
+.trigger-enter-active {
+  opacity:1;
+}
+
+.dropdownBackground{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: #fff; //white
+  border-radius: 4px;
+  transition: all 0.3s, opacity 0.1s, translate 0.2s;
+  transform-origin: 50% 0%;
+  display:flex;
+  justify-content: center;
+  opacity:0;
+}
+
+.dropdownBackground.open {
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.bio {
+  min-width: 500px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+}
+
+
+.courses {
+  min-width: 300px;
+
+}
+
+.courses li {
+  padding: 10px 0;
+  display:block;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #ffc600;
+}
+
+a.button {
+  background: black;
+  display:block;
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+}

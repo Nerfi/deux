@@ -1,3 +1,5 @@
+// this navbar is located in the new.html.erb, is not a partial
+
 window.onscroll = function() { myFunction() };
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
