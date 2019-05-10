@@ -10,6 +10,8 @@ import { debounce } from '../components/slides';
 import { handleLeave} from '../components/navstripe';
 import { handleEnter } from '../components/navstripe';
 
+import { sliderImg } from '../components/items';
+
 //iniciando la const
 //toggleOpen();
 
@@ -24,5 +26,8 @@ debounce();
 
 //stripe navbar
 
-handleEnter();
-handleLeave();
+//handleEnter();
+//handleLeave();
+
+//imtes
+sliderImg();

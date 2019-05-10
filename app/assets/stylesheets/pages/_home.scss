@@ -181,3 +181,30 @@ a.button {
   color: white;
   margin-bottom: 10px;
 }
+
+
+// image that in a future we will drag, items class
+
+.items > .item {
+  padding:30px;
+  //justify-content: center;
+  //display:inline-block;
+}
+
+.items.active {
+  background: rgba(255,255,255,0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);// esto lo hacemos para que cuando hagamos click aumente
+  // un poco la img.
+}
+
+
+.item {
+  width:200px;
+  height: calc(100% - 40px);
+  display: inline-flex;
+  align-items: center;
+  justify-content:center;
+  font-size: 80px;
+}
