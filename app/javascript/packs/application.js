@@ -30,4 +30,4 @@ debounce();
 //handleLeave();
 
 //imtes
-sliderImg();
+//sliderImg();
